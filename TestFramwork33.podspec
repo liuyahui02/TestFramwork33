@@ -25,8 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "测定测试测试测TestFramwork33"
-
-  spec.homepage     = "http://liuyahui02/TestFramwork33"
+  spec.homepage     = "https://github.com/liuyahui02/TestFramwork33"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -37,8 +36,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+ # spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -78,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://liuyahui02/TestFramwork33.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/liuyahui02/TestFramwork33.git", :tag => "v0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,10 +88,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "TestFramwork33", "TestFramwork33/**/*.{h,m}"
-  spec.exclude_files = "TestFramwork33/Exclude"
+  spec.source_files  = "TestFramwork33", "TestFramwork/**/*.{h,m}"
+  spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "TestFramwork33/**/*.h"
+  # spec.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
